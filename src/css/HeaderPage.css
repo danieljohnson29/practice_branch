@@ -1,0 +1,21 @@
+/* HeaderPage.css */
+.dark-mode-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1f1f1f;
+    transition: background-color 0.1s;
+    color: #b8b8b8;
+    padding: 0 16px;
+  }
+  
+  .light-mode-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #8492A6;
+    transition: background-color 0.1s;
+    color: #000;
+    padding: 0 16px;
+  }
+  

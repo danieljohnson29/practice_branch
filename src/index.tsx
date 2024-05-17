@@ -1,15 +1,30 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import ReactDOM from "react-dom/client";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import "antd/dist/reset.css";
+import { ToastContainer } from "react-toastify";
+import { Provider } from 'react-redux';
+import store from './redux/store';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
+      <Provider store={store}>
+
     <App />
+    <ToastContainer
+      position="top-right"
+      className="toastify_container"
+      toastClassName="toastify_root"
+      bodyClassName="toastify_body"
+      hideProgressBar
+      closeButton={false}
+      closeOnClick={false}
+    />
+      </Provider>
   </React.StrictMode>
 );
 

@@ -1,0 +1,48 @@
+/* Sidebar.css */
+.dark-mode .ant-menu-item,
+.dark-mode .ant-menu-submenu-title {
+  color: #b8b8b8 !important;
+}
+
+.light-mode .ant-menu-item,
+.light-mode .ant-menu-submenu-title {
+  color: #000000 !important;
+}
+
+.dark-mode .ant-menu-item:hover,
+.dark-mode .ant-menu-submenu-title:hover {
+  background-color: #ffffff55 !important;
+  color: #b8b8b8 !important; /* Highlight color for dark mode */
+}
+
+.light-mode .ant-menu-item:hover,
+.light-mode .ant-menu-submenu-title:hover {
+  background-color: #5a697b7a !important;
+  color: #ffffff !important; /* Highlight color for light mode */
+}
+
+/* Sidebar.css */
+.light-mode .ant-menu-item-selected{
+  background-color: #3C4858 !important;
+  color: #ffffff  !important/* Set font color to black for light mode */
+}
+
+.dark-mode .ant-menu-item-selected{
+  color: #0d0d0d !important; /* Set font color to gray for dark mode */
+}
+
+.sidebar-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.sidebar-footer .ant-typography {
+  margin-bottom: 10px;
+}
+
+.sidebar-footer .ant-btn {
+  width: 100%;
+}
+
