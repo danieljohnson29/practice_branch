@@ -24,7 +24,7 @@ function App() {
   const isAuthenticated = useSelector(
     (state: RootState) => state.auth.isAuthenticated
   );
-  
+
   console.log('05-17 isAuthenticated: ', isAuthenticated);
   const toggleDarkMode = () => {
     setDarkMode((prevMode) => !prevMode);
@@ -38,7 +38,7 @@ function App() {
           element={isAuthenticated ? <Navigate to="/" /> : <Login />}
         />
         <Route
-          path="/"
+          path="/*"
           element={
             isAuthenticated ? (
               <Layout
@@ -75,16 +75,9 @@ function App() {
                       borderRadius: 10,
                     }}
                   >
-                    {/* Define routes for different pages */}
                     <Routes>
-                      {/* <Route
-                        path="/"
-                        element={<ContentPage darkMode={darkMode} />}
-                      /> */}
-                      <Route
-                        path="/spreadsheets"
-                        element={<SpreadSheetsPage darkMode={darkMode} />}
-                      />
+                      <Route path="/" element={<ContentPage darkMode={darkMode} />} />
+                      <Route path="/spreadsheets" element={<SpreadSheetsPage darkMode={darkMode} />} />
                     </Routes>
                   </Content>
                 </Layout>
