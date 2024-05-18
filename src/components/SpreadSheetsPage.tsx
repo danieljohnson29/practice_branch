@@ -33,7 +33,6 @@ const SpreadSheetsPage = ({ darkMode }: any) => {
     "Time",
     "datetime-local",
   ];
-console.log("demo changes")
 
   const [dynamicFieldCount, setDynamicFieldCount] = useState(0);
 
